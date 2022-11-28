@@ -31,6 +31,7 @@ ____
 2. изменить файл `index.html`, указав id приложения которое планируем запускать.  
 id можно подсмотреть в файле `appinfo.json` в папке запускаемого приложения.  
 в случае с `vokino` это `/media/developer/apps/usr/palm/applications/vokinotv/appinfo.json` со значением id `vokinotv`  
+
 таким образом в файле index.html строки:
 ```html
   webOS.service.request("luna://com.webos.applicationManager", {
