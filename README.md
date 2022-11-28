@@ -27,7 +27,9 @@ ID можно подсмотреть в файле appinfo.json в папке з
     parameters: { "id": "vokinotv" },
 ```
 после этого собрать приложение с помощью скрипта, добавленная вами папка появится в списке доступных
+
 точно так же можно поступить и с кнопками из папки buttons если ваша отсутствует в списке, но тогда нужно менять id приложения в файле appinfo.json
+
 скрипт динамически строит меню на основании списка папок внутри apps/buttons
 
 для работы нужен webos-cli который есть внутри Webos SDK minimal (https://webostv.developer.lge.com/develop/tools/sdk-downloading-installer#minimal-installer)
