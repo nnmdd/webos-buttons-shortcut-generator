@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Piccap restart</title>
+</head>
+
+<script src="webOSTVjs-1.2.4/webOSTV.js" charset="utf-8"></script>
+<script src="webOSTVjs-1.2.4/webOSTV-dev.js" charset="utf-8"></script>
+<body>
+<script type="text/javascript">
+webOS.service.request("luna://org.webosbrew.piccap.service", {
+	method: "status",
+	parameters: {},
+        onSuccess: function (inResponse) {
+		if (inResponse.isRunning) {
+			webOS.service.request("luna://org.webosbrew.piccap.service", {
+			method: "stop",
+			parameters: {},
+			});
+			window.close();
+		} else {
+			webOS.service.request("luna://org.webosbrew.piccap.service", {
+			method: "start",
+			parameters: {},
+			});
+ 			window.close();
+		}
+	},
+	onFailure: function (inError) {
+		window.close();
+		}
+});
+</script>
+</body>
+</html>

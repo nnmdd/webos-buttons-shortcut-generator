@@ -1,0 +1,17 @@
+{
+  "id": "com.685631.3411",
+  "title": "Launcher",
+  "appDescription": "Kinopoisk key rebind",
+  "version": "0.0.8",
+  "vendor": "open source",
+  "type": "web",
+  "main": "index.html",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "transparent": true,
+  "noSplashOnLaunch": true,
+  "disableBackHistoryAPI": true,
+  "blockMediaPlay": false,
+  "defaultWindowType": "popup",
+  "visible": false
+}

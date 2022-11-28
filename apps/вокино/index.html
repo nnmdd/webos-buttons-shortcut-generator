@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>LAMPA launcher</title>
+</head>
+
+<script src="webOSTVjs-1.2.4/webOSTV.js" charset="utf-8"></script>
+<script src="webOSTVjs-1.2.4/webOSTV-dev.js" charset="utf-8"></script>
+<script type="text/javascript">
+	webOS.service.request("luna://com.webos.applicationManager", {
+		method: "launch",
+		parameters: { "id": "vokinotv" },
+           onSuccess: function (inResponse) {
+               console.log("The app is launched");
+           },
+           onFailure: function (inError) {
+               console.log("Failed to launch the app");
+               console.log("[" + inError.errorCode + "]: " + inError.errorText);
+               return;
+           }
+       });
+       window.close();
+</script>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+{
+  "id": "yota.play",
+  "version": "0.0.8",
+  "vendor": "open source",
+  "type": "web",
+  "main": "index.html",
+  "title": "Launcher",
+  "appDescription": "okko",
+  "icon": "icon.png",
+  "largeIcon": "largeIcon.png",
+  "transparent": true,
+  "noSplashOnLaunch": true,
+  "disableBackHistoryAPI": true,
+  "blockMediaPlay": false,
+  "defaultWindowType": "popup",
+  "visible": true
+}
