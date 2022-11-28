@@ -19,17 +19,17 @@ ID можно подсмотреть в файле appinfo.json в папке з
 /media/developer/apps/usr/palm/applications/vokinotv/appinfo.json с ID vokinotv
 
 таким образом в файле index.html строки:
-
+```
   webOS.service.request("luna://com.webos.applicationManager", {
     method: "launch",
     parameters: { "id": "com.lampa.tv" },
-
+```
 нужно изменить на:
-
+```
    webOS.service.request("luna://com.webos.applicationManager", {
     method: "launch",
     parameters: { "id": "vokinotv" },
-
+```
 после этого собрать приложение с помощью скрипта, добавленная вами папка появится в списке доступных
 точно так же можно поступить и с кнопками из папки buttons если ваша отсутствует в списке, но тогда нужно менять id приложения в файле appinfo.json
 скрипт динамически строит меню на основании списка папок внутри apps/buttons
