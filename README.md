@@ -8,8 +8,9 @@ ____
 
 для работы нужен webos-cli который есть внутри Webos SDK minimal (https://webostv.developer.lge.com/develop/tools/sdk-downloading-installer#minimal-installer)  
 возможно устанавливать SDK не обязательно, достаточно распаковать webos_cli_tv.zip в удобное место  
-файл webos_cli_tv.zip живёт внутри webOS_SDK_TV_win64.zip, который распаковывается из скачанногоwebOS_SDK_TV_Installer_win64_min.zip. больше вложений богу вложений!  
-для установки сгенерированного ярлыка нужно добавить телевизор через скрипт ares-setup-device 
+файл webos_cli_tv.zip живёт внутри webOS_SDK_TV_win64.zip, который распаковывается из скачанного webOS_SDK_TV_Installer_win64_min.zip.  
+Больше вложений богу вложений!  
+Для установки сгенерированного ярлыка нужно добавить телевизор через скрипт ares-setup-device 
 ____  
 ## Установка, настройка, использование
 
